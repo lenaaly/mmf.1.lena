@@ -17,3 +17,5 @@
 #calculate total sales and profit
 
 #output data to text file
+
+print ("hello")
