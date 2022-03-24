@@ -1,7 +1,7 @@
 # functions go here
 
 
-def not_blank(question):
+def not_blank(question, error_message):
   valid = False
   
   while not valid:
@@ -11,10 +11,11 @@ def not_blank(question):
       return response
     
     else:
-      print("Sorry - this cant be blank")
+      print(error_message)
 
 # main routine goes here
-name = not_blank("Name: ")
+name = not_blank("Name: ", 
+                 "Sorry - this cant be blank,"
+                "please enter your name")
 
-print("fykvukr")
       
