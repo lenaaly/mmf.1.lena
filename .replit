@@ -1,2 +1,2 @@
 language = "python3"
-run = "python v2ticket_loop.py"
+run = "python number_checker.py"
