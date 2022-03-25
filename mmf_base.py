@@ -21,37 +21,28 @@ def not_blank(question, error_message):
 
 
 
-def int_check(question, low_num, high_num):
+def int_check(question):
 
-  error = "Please enter a whole number between {} " \
-  "and {}".format(low_num, high_num)
-  
   valid = False
   while not valid:
 
+    # ask user for number and check it is valid
     try:
       response = int(input(question))
 
-      if low_num <= response <= high_num:
-        return response
-      else:
+      if response <= 0:
         print(error)
+      else:
+        return response
 
     except ValueError:
       print(error)
 
-      
 
 
-#''''''''''''' Main Routine ''''''''''''
-
-# set up dictionaries / lists needed to hold data
-# Ask user if they have used the program before and show instructions if nessesary
 
 
-#loop to get ticket details
 
-# initialise loop so that it runs at least once
 
 
 name = ""
@@ -71,11 +62,21 @@ while name != "xxx" and count < MAX_TICKETS:
   if name == "xxx":
     break
   
-  count += 1
+
     
   # get age (between 12 and 130)
-  age = int_check("Age: ", 12, 130)
+  age = int_check("Age: ")
 
+  # check age is valid
+  if age < 12:
+    print("Sorry you are too young for this movie")
+    continue
+  elif age > 130:
+    print("That is very old - it looks like a mistake")
+    continue
+
+  count += 1
+    
 # tells user how many seats are left
 if count == MAX_TICKETS:
   print("You have sold all the available tickets!")
