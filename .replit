@@ -1,2 +1,2 @@
 language = "python3"
-run = "python mmf_base.py"
+run = "python yes_no.py"
