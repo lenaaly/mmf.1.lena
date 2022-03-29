@@ -45,12 +45,29 @@ def int_check(question):
 
 
 
-name = ""
-count = 0
+
+
+# ******************* Main Routine ********************
+  
+# set up dictionaries / lists needed to hold data
+
+# ask user if they have used the program before and show instructions
+      
+      
+# loop to get ticket details
+# start of loop
+      
+# initialise loop so that it runs at least once
 MAX_TICKETS = 5
 
-while name != "xxx" and count < MAX_TICKETS:
-  print("You have {} seats " "left".format(MAX_TICKETS -count))
+name = ""
+ticket_count = 0
+ticket_sales = 0
+
+
+
+while name != "xxx" and ticket_count < MAX_TICKETS:
+  print("You have {} seats " "left".format(MAX_TICKETS -ticket_count))
 
   # get details...
 # get name (cant be blank)
@@ -75,20 +92,32 @@ while name != "xxx" and count < MAX_TICKETS:
     print("That is very old - it looks like a mistake")
     continue
 
-  count += 1
+  if age < 16:
+    ticket_price = 7.5
+  elif age < 65:
+    ticket_price = 10.5
+  else:
+    ticket_price = 6.5
+
+  ticket_count += 1
+  ticket_sales += ticket_price
     
+
+# end of ticket loop 
+
+# calculate ticket profit...
+ticket_profit = ticket_sales - (5 * ticket_count)
+print("Ticket profit: ${:.2f}".format(ticket_profit))
+
+
 # tells user how many seats are left
-if count == MAX_TICKETS:
+if ticket_count < MAX_TICKETS - 1:
   print("You have sold all the available tickets!")
 
 # warns user that only one seat is left!
 else:
   print("You have sold {} tickets.  \n"
-       "There are {} places still available".format(count, MAX_TICKETS - count))
-
-
-  
-  
+       "There are {} places still available".format(ticket_count, MAX_TICKETS - ticket_count))
 # calulate ticket price
 # loop to ask for snacks
 # calculate snack price
