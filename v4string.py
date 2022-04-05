@@ -34,6 +34,13 @@ def string_check(choice, options):
 # each item in valid snacks is a list with
 # valid options for each snack <full name, letter code (a-e)
 # , and possible abbreviations eto>
+
+
+
+
+#valid snacks holds list of all snacks
+# each item in valid snacks is a list with valid options for each snack <full name, letter code (a-e), 
+#and possible abbreviations etc>
 valid_snacks = [
   ["popcorn", "p", "corn", "a"],
   ["M&M's", "m&m's", "mms", "m", "b"], # first item is M&M
@@ -81,6 +88,9 @@ if check_snack == "Yes":
 print()
 if len(snack_order) == 0:
   print("Snacks Ordered: None"
-       
+
 else:
-  print("Sna")
+  print("Snacks Ordered:")
+  
+  for item in snack_order:
+    print(item)
