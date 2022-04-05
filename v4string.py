@@ -76,7 +76,7 @@ if check_snack == "Yes":
 
     # check if snack is valid
     snack_choice = string_check(desired_snack, valid_snacks)
-    print("Snack Choice: ", snack_choice)
+    print("Snack Choice:", snack_choice)
 
     # add snack to list...
 
