@@ -1,2 +1,2 @@
 language = "python3"
-run = "python string_analyser.py"
+run = "python v5string.py"
