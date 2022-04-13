@@ -14,5 +14,3 @@ while name != "xxx" and count < MAX_TICKETS:
   count += 1
   seats_left -= 1
   print ("You have ", seats_left, "tickets left")
-
-  

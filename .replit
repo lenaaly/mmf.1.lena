@@ -1,2 +1,2 @@
 language = "python3"
-run = "python sandbox.py"
+run = "python string_analyser.py"
