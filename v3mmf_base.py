@@ -1,6 +1,7 @@
-# import statements 
+#import regular expressions
 import re
 
+# import statements 
 import pandas
 
 # functions go here
@@ -38,16 +39,29 @@ def int_check(question):
       response = int(input(question))
 
       if response <= 0:
-        print(error)
+        print("error")
       else:
         return response
 
     except ValueError:
-      print(error)
+      print("error")
 
 
 
 
+
+
+def check_tickets(tickets_sold, ticket_limit):
+  # tells use how many seats are left
+  if tickets_sold < ticket_limit - 1:
+    print("You have {} seats "
+         "left".format(ticket_limit - tickets_sold))
+
+  # warns user that only one seat is left!
+  else:
+    print("*** There is ONE seat left!! ***")
+
+  return ""
 
 def get_ticket_price():
 
@@ -77,6 +91,7 @@ def get_ticket_price():
 
 # initialise loop so that it runs at least one time
 
+
 MAX_TICKETS = 5
 
 name = ""
@@ -89,7 +104,7 @@ all_tickets = []
 
 # data drane dictionary 
 movie_data_dict = {
-  'Name': all_name,
+  'Name': all_names,
   'Ticket': all_tickets
 }
 
@@ -142,5 +157,3 @@ print("Ticket profit: ${:.2f}".format(ticket_profit))
 # tell user if they have unsold tickets...
 if ticket_count == MAX_TICKETS:
   print("You have sold all the available tickets!")
-
-  

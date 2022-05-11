@@ -1,2 +1,2 @@
 language = "python3"
-run = "python v2string.py"
+run = "python v3mmf_base.py"
