@@ -1,8 +1,7 @@
 #import regular expressions
 import re
 
-# import statements 
-import pandas
+
 
 # functions go here
 
@@ -119,7 +118,7 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
   # *** Get details for each ticket...***
 
   # get name (can't be blank")
-  name = not_blank("Name: ")
+  name = not_blank("Name: ", "error")
 
   # end the loop if the exit code is entered
   if name == "xxx":
