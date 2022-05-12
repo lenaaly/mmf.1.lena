@@ -1,7 +1,8 @@
 #import regular expressions
-import pandas
 
 import re
+
+import pandas
 
 # functions go here
 
@@ -81,6 +82,7 @@ def get_ticket_price():
       ticket_price = 10.5
     else:
       ticket_price = 6.5
+    return ticket_price
 
 
 
@@ -147,6 +149,7 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
 
 # print details...
 movie_frame = pandas.DataFrame(movie_data_dict)
+
 print(movie_frame)
                      
 #calculate ticket profit...
