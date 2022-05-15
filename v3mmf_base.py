@@ -2,7 +2,7 @@
 
 import re
 
-import pandas
+import pandas as pd
 
 # functions go here
 
@@ -148,7 +148,7 @@ while name != "xxx" and ticket_count < MAX_TICKETS:
 
 
 # print details...
-movie_frame = pandas.DataFrame(movie_data_dict)
+movie_frame = pd.DataFrame(movie_data_dict)
 
 print(movie_frame)
                      
