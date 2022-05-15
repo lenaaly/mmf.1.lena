@@ -1,2 +1,2 @@
-language = "python3"
-run = "python 01_v2_name_not_blank.py"
+language = "python3.9"
+run = "python v3mmf_base.py"
