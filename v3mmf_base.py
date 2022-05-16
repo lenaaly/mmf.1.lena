@@ -157,5 +157,5 @@ ticket_profit = ticket_sales - (5 * ticket_count)
 print("Ticket profit: ${:.2f}".format(ticket_profit))
 
 # tell user if they have unsold tickets...
-if ticket_count == MAX_TICKETS:
-  print("You have sold all the available tickets!")
+print("You have sold {} tickets.  \n"
+       "There are {} places still available".format(ticket_count, MAX_TICKETS - ticket_count))
