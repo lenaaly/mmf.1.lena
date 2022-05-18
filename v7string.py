@@ -114,6 +114,8 @@ def get_snack():
 #main routine
 
 #valid options for yes / no question
+
+
 yes_no = [
   ["yes", "y"],
   ["no", "n"]
