@@ -1,2 +1,2 @@
 language = "python3.9"
-run = "python v4mmf_base.py"
+run = "python v2snack_list.py"
