@@ -1,2 +1,2 @@
 language = "python3.9"
-run = "python v3snack_list.py"
+run = "python 11_tickets_snacks_v1.py"
